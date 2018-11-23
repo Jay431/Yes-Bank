@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>HTMLStatementgeneratorService</display-name>
+	<welcome-file-list>
+		<welcome-file>test.jsp</welcome-file>
+		
+	</welcome-file-list>
+	<display-name>RestPathAnnotationExample</display-name>
+	<listener>
+        <listener-class>com.in10s.listener.ApplicationListener</listener-class>
+    </listener>
+	<servlet>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>com.in10s.service</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>CRSGetToken</servlet-name>
+        <servlet-class>com.in10s.yes.CRSGetToken</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CRSGetToken</servlet-name>
+        <url-pattern>/CRSGetToken</url-pattern>
+    </servlet-mapping>
+	
+</web-app>

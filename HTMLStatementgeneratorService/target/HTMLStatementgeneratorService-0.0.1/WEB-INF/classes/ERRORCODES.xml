@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEEPLINK>
+    <NOJOBKEY>this request does not contain jobkey  parameters</NOJOBKEY>
+    <INVALIDPARAMS>Invalid arguments</INVALIDPARAMS>
+    <NOFORMAT>this request does not contain  format parameter</NOFORMAT>
+    <NULLINPUT>job key and format keys are null values</NULLINPUT>
+    <EMPTYINPUT>empty jobkey or empty format</EMPTYINPUT>
+    <FILENOTAVAIL>input XML file not existed </FILENOTAVAIL>
+    <INVALIDJOBPARAMS>can't replace jobcommand with null values</INVALIDJOBPARAMS>
+    <INTERNAL>Internal Error occurred</INTERNAL>
+    <MISMATCHFORMAT>mismatch file type and format</MISMATCHFORMAT>
+    <INVALIDFORMAT>invalid file format</INVALIDFORMAT>
+    <UNISERVEFAIL>Invalid response received while processing request</UNISERVEFAIL>
+    <NOKEY>none of record is available with this jobkey</NOKEY>
+    <EMPTYJOBCOMM>html jobcommand is empty</EMPTYJOBCOMM>
+    <INVALIDPASS>Invalid Authentication</INVALIDPASS>
+    <INVALIDREQUEST>Bad Request</INVALIDREQUEST>
+    <INVALIDTOKEN>Invalid Token</INVALIDTOKEN>
+    <INVALIDBROWSERVERSION>Browser Version Not Supported</INVALIDBROWSERVERSION>
+    <SCRIPTDISABLECONTENT>script disabled in browser,please enable active scripting</SCRIPTDISABLECONTENT>
+    <AJAXFAIL>Internal Error occurred to process your Request Please retry next time</AJAXFAIL>
+    <NULLORWMPTY>job key is empty or null values</NULLORWMPTY>
+    <SESSIONVALIDATION>Invalid Session </SESSIONVALIDATION>
+    <REQUESTALREDYINPROCESS>Request already in Process</REQUESTALREDYINPROCESS>
+    <SESSIONEXPIRED>request session is expired</SESSIONEXPIRED>
+</DEEPLINK>

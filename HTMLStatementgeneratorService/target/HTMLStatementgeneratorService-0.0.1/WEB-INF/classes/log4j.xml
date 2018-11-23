@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "/WEB-INF/log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" >
+    
+  
+
+    <!-- Daily hour base log -->
+    <appender name="Daily" class="com.in10s.applog.DailyFolderAppender">
+        <param name="RootFolder" value="${htmlStatement_logger_RootPath}" />
+        <param name="FileName" value="HTML_Statement_Generator_Service_Log.log" />
+        <param name="MaxFileSize" value="${htmlStatement_logger_MaxSize}" />
+        <param name="DatePattern" value="yyyy-MM-dd-HH" />
+        <param name="append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss.SSS} %-5p : %m : %n" />
+        </layout>
+    </appender>
+    <logger name="org.apache.log4j">
+        <level value="${htmlStatement_logger_Level}"></level>
+        <appender-ref ref="Daily" />
+    </logger>
+    <root>
+        <priority value="${htmlStatement_logger_Level}"></priority>
+        <appender-ref ref="Daily" />
+    </root>
+</log4j:configuration>
