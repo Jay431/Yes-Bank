@@ -1,0 +1,5 @@
+com\in10s\applog\AppLogger.class
+com\in10s\utils\Base64.class
+com\in10s\common\CAuthenticate.class
+com\in10s\applog\DailyFolderAppender.class
+com\in10s\utils\C_AES_256.class
